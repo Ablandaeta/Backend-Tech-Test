@@ -1,0 +1,15 @@
+# Virtual Environment
+.venv/
+venv/
+
+# Python Cache
+__pycache__/
+*.pyc
+
+# Database File (This is temporary for a local demo.
+# In production, you would include database migrations, not the file itself)
+/db/database.db
+
+# Operating System Files
+.DS_Store
+Thumbs.db
