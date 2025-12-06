@@ -1,6 +1,5 @@
 from typing import List
 from pydantic import BaseModel, EmailStr
-from fastapi.security import OAuth2PasswordBearer
 
 
 class UserCreate(BaseModel):
@@ -18,5 +17,3 @@ class UserResponse(BaseModel):
 
 class UserList(BaseModel):
     users: List[UserResponse]
-
-oauth2= OAuth2PasswordBearer(tokenUrl="token")
