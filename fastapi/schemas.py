@@ -17,3 +17,10 @@ class UserResponse(BaseModel):
 
 class UserList(BaseModel):
     users: List[UserResponse]
+
+class Token(BaseModel):
+    access_token: str
+    token_type: str    
+
+class TokenData(BaseModel):
+    username: str | None = None    
